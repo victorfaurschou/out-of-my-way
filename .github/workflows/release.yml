@@ -1,0 +1,32 @@
+name: release
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    uses: victorfaurschou/minecraft-modding-workflows/.github/workflows/build.yml@main
+    secrets: inherit
+
+  release:
+    needs: build
+    permissions:
+      contents: write
+      actions: read
+    uses: victorfaurschou/minecraft-modding-workflows/.github/workflows/release.yml@main
+    with:
+      mod_name: out-of-my-way
+      build_run_id: ${{ github.run_id }}
+      build_sha: ${{ github.sha }}
+      build_branch: ${{ github.ref_name }}
+      build_event: ${{ github.event_name }}
+      modrinth_loaders: fabric
+      modrinth_environment: server_only_client_optional
+      modrinth_minecraft_versions: "26.2"
+      modrinth_dependencies: '[{"project_id":"P7dR8mSH","dependency_type":"required"},{"project_id":"9s6osm5g","dependency_type":"required"},{"project_id":"mOgUt4GM","dependency_type":"optional"}]'
+      curseforge_loaders: fabric
+      curseforge_minecraft_versions: "26.2"
+      curseforge_java_versions: "25"
+      curseforge_relations: '[{"slug":"fabric-api","type":"requiredDependency"},{"slug":"cloth-config","type":"requiredDependency"},{"slug":"modmenu","type":"optionalDependency"}]'
+    secrets: inherit
