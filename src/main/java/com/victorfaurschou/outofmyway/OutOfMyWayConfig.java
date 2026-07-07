@@ -26,7 +26,7 @@ public class OutOfMyWayConfig {
     public static float        speedMultiplier      = 1.2f;
     public static boolean      inView               = true;
     public static int          inViewDistance       = 8;
-    public static int          itemHoldDisableDelay = 3;
+    public static int          itemHoldDisableDelay = 4;
 
     public static void load() {
         try {
@@ -43,7 +43,7 @@ public class OutOfMyWayConfig {
                         speedMultiplier      = d.speedMultiplier      != null ? Math.max(1f, d.speedMultiplier)                  : 1.2f;
                         inView               = d.inView               != null ? d.inView               : true;
                         inViewDistance       = d.inViewDistance       != null ? Math.max(4, Math.min(16, d.inViewDistance))      : 8;
-                        itemHoldDisableDelay = d.itemHoldDisableDelay != null ? Math.max(1, Math.min(10, d.itemHoldDisableDelay)) : 3;
+                        itemHoldDisableDelay = d.itemHoldDisableDelay != null ? Math.max(2, Math.min(10, d.itemHoldDisableDelay)) : 4;
                     }
                 }
             }

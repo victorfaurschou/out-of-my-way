@@ -58,8 +58,8 @@ public class ClothConfigScreen {
 
         general.addEntry(e.startIntSlider(
                         Component.translatable("config.out-of-my-way.item_hold_disable_delay"),
-                        OutOfMyWayConfig.itemHoldDisableDelay, 1, 10)
-                .setDefaultValue(3)
+                        OutOfMyWayConfig.itemHoldDisableDelay, 2, 10)
+                .setDefaultValue(4)
                 .setTextGetter(v -> Component.literal(v + "s"))
                 .setTooltip(tip("item_hold_disable_delay"))
                 .setSaveConsumer(v -> OutOfMyWayConfig.itemHoldDisableDelay = v)
