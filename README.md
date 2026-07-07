@@ -4,6 +4,8 @@
 
 Available on [Modrinth](https://modrinth.com/mod/out-of-my-way/) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods/out-of-my-way).
 
+Works well alongside **Wolves Hunt Enemies** ([Modrinth](https://modrinth.com/mod/wolves-hunt-enemies), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/wolves-hunt-enemies)).
+
 ## 📖 Features
 
 * Tamed animals (wolves, cats and parrots) are relocated behind you when they get too close or in your way.
@@ -25,10 +27,6 @@ Open the config screen via **Mod Menu** or by running `/out-of-my-way config` in
 [![1](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/1.gif)](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/1.gif)
 
 [![2](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/2.gif)](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/2.gif)
-
-## 📌 Notes
-
-Works well alongside **Wolves Hunt Enemies** ([Modrinth](https://modrinth.com/mod/wolves-hunt-enemies), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/wolves-hunt-enemies)).
 
 ## 🔗 Dependencies
 
