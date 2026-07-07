@@ -20,6 +20,12 @@ Hold the animal's taming item (e.g. a bone for wolves) to temporarily pause func
 
 Open the config screen via **Mod Menu** or by running `/out-of-my-way config` in chat.
 
+## 💡 Examples
+
+[![1](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/1.gif)](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/1.gif)
+
+[![2](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/2.gif)](https://raw.githubusercontent.com/victorfaurschou/out-of-my-way/26.2/.github/showcase/examples/2.gif)
+
 ## 📌 Notes
 
 Works well alongside **Wolves Hunt Enemies** ([Modrinth](https://modrinth.com/mod/wolves-hunt-enemies), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/wolves-hunt-enemies)).
