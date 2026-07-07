@@ -1,6 +1,6 @@
 # Out of My Way
 
-**Keeps tamed animals out of the way.**
+**Keep tamed animals out of the way.**
 
 Available on [Modrinth](https://modrinth.com/mod/out-of-my-way/) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods/out-of-my-way).
 
