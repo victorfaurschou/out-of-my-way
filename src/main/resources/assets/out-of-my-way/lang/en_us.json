@@ -1,0 +1,21 @@
+{
+  "config.out-of-my-way.title": "Out of My Way",
+  "config.out-of-my-way.category.general": "General",
+  "config.out-of-my-way.category.animals": "Animals",
+  "config.out-of-my-way.enable_wolves": "Wolves",
+  "config.out-of-my-way.enable_cats": "Cats",
+  "config.out-of-my-way.enable_parrots": "Parrots",
+  "config.out-of-my-way.custom_wolf_items": "Additional Interact Items",
+  "config.out-of-my-way.min_distance": "Min Distance from Player",
+  "config.out-of-my-way.in_view": "Apply to Animals in View",
+  "config.out-of-my-way.in_view_distance": "View Distance",
+  "config.out-of-my-way.item_hold_disable_delay": "Item Hold Disable Delay",
+  "config.out-of-my-way.speed_multiplier": "Speed Multiplier",
+
+  "config.out-of-my-way.tooltip.min_distance": "Animals within this distance will be relocated behind you.",
+  "config.out-of-my-way.tooltip.item_hold_disable_delay": "How long after holding the taming item before normal behaviour resumes.",
+  "config.out-of-my-way.tooltip.in_view": "Also include animals within your view in addition to the minimum distance.",
+  "config.out-of-my-way.tooltip.in_view_distance": "Maximum distance within view where animals are considered.",
+  "config.out-of-my-way.tooltip.speed_multiplier": "How fast animals move when they're relocating.",
+  "config.out-of-my-way.tooltip.custom_items": "Extra items that pause relocation when held, just like the default taming items. Use item IDs like minecraft:bone."
+}

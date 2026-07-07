@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.victorfaurschou.outofmyway.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "FollowOwnerGoalMixin",
+    "LivingEntityIsPushableMixin",
+    "LivingEntityPushMixin",
+    "TamableAnimalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

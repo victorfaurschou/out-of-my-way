@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "out-of-my-way",
+	"version": "${version}",
+	"name": "Out of My Way",
+	"description": "Keeps your tamed animals out of your way.",
+	"authors": [
+		"medicalwhiskey"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/out-of-my-way",
+		"sources": "https://github.com/victorfaurschou/out-of-my-way",
+		"issues": "https://github.com/victorfaurschou/out-of-my-way/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/out-of-my-way/icon.png",
+	"environment": "*",
+	"mixins": [
+		"out-of-my-way.mixins.json"
+	],
+	"entrypoints": {
+		"main": [
+			"com.victorfaurschou.outofmyway.OutOfMyWay"
+		],
+		"client": [
+			"com.victorfaurschou.outofmyway.client.OutOfMyWayClient"
+		],
+		"modmenu": [
+			"com.victorfaurschou.outofmyway.client.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": ">=26.2 <26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
