@@ -3,16 +3,25 @@ package com.victorfaurschou.outofmyway.mixin;
 import com.victorfaurschou.outofmyway.OutOfMyWay;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(TamableAnimal.class)
 public class TamableAnimalMixin {
+
+    @Inject(method = "feed", at = @At("HEAD"))
+    private void onFeed(Player player, InteractionHand hand, ItemStack stack, float f1, float f2, CallbackInfo ci) {
+        OutOfMyWay.resetPauseTimer((TamableAnimal) (Object) this);
+    }
 
     // relocate vanilla teleports to land behind the player instead of at their feet
     @Inject(method = "maybeTeleportTo", at = @At("HEAD"), cancellable = true)

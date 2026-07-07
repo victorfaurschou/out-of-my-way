@@ -150,6 +150,12 @@ public class OutOfMyWay implements ModInitializer {
         return until != null && System.currentTimeMillis() < until;
     }
 
+    public static void resetPauseTimer(TamableAnimal animal) {
+        disabledUntilMs.merge(animal.getUUID(),
+                System.currentTimeMillis() + interactDisableMs(), Math::max);
+        animal.getNavigation().stop();
+    }
+
     public static boolean isTypeEnabled(TamableAnimal animal) {
         if (animal instanceof Wolf)   return OutOfMyWayConfig.enableWolves;
         if (animal instanceof Cat)    return OutOfMyWayConfig.enableCats;
