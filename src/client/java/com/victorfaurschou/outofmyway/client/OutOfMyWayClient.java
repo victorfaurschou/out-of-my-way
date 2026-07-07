@@ -19,7 +19,7 @@ public class OutOfMyWayClient implements ClientModInitializer {
                         .then(ClientCommands.literal("config")
                                 .executes(ctx -> {
                                     Minecraft mc = Minecraft.getInstance();
-                                    mc.execute(() -> mc.gui.setScreen(ClothConfigScreen.create(null)));
+                                    mc.execute(() -> mc.setScreen(ClothConfigScreen.create(null)));
                                     return 1;
                                 }))
                         .then(ClientCommands.literal("enabled")
